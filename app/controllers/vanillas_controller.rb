@@ -1,0 +1,2 @@
+class VanillasController < ApplicationController
+end
