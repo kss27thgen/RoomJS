@@ -1,0 +1,19 @@
+.home-wrapper {
+  .homeMenu {
+    width: 40rem;
+    height: 70rem;
+    background: skyblue;
+    margin: 0 auto;
+    &-title{
+      font-size: 5rem;
+      text-align: center;
+    }
+    &-list{
+      &Item {
+        font-size: 3rem;
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
