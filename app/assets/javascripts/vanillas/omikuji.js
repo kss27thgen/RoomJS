@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("turbolinks:load", () => {
   const btn = document.getElementById('omikuji-btn');
 
   if(btn){
