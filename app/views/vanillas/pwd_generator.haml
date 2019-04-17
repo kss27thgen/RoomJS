@@ -1,0 +1,24 @@
+.pwdGen
+  .pwdGen-title
+    〜パスワードジェネレータ〜
+  .pwdGen-wrapper
+    .pwdContainer
+      %p
+        %input{type: "text", id: "btnResult" }
+      %p
+        #pwdBtn
+          Generate Password
+      %fieldset
+        %legend
+          Options
+        %p
+          Length:(
+          %span#pwdLabel
+            8
+          )
+          %input{type: "range", id: "pwdSlider", value: "8", min: "4", max: "20"}
+        %p
+          Numbers?:
+          %input{type: "checkbox", id: "pwdNumbers"}
+          Symbols?
+          %input{type: "checkbox", id: "pwdSymbols"}
