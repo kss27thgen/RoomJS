@@ -3,5 +3,8 @@ Rails.application.routes.draw do
   get "vanillas/omikuji"
   get "vanillas/psw_generator"
 
-  # root "home#links"
+  get "home/top"
+
+
+  root "home#top"
 end

@@ -1,8 +1,38 @@
-.test {
-  font-size: 3rem;
-  color: blue;
-}
+.omikuji{
+  &-title{
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem 0;
+  }
+  &-wrapper {
+    width: 40rem;
+    height: 30rem;
+    background: #efefef;
+    margin: 0 auto;
+    padding: 5rem;
+    #omikuji-btn {
+      width: 20rem;
+      height: 20rem;
+      background: tomato;
+      border-radius: 50%;
+      margin: 3rem auto;
+      text-align: center;
+      line-height: 20rem;
+      color: #fff;
+      font-size: 4.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      user-select: none;
+      box-shadow: 0 1rem 0 #d1483e;
+    }
+    #omikuji-btn:hover {
+      opacity: 0.9;
+    }
+    #omikuji-btn.pressed {
+      box-shadow: 0 0.5rem 0 #d1438e;
+      margin: 3.5rem auto;
+    }
 
-#jstest:hover {
-  opacity: 0.8;
+
+  }
 }

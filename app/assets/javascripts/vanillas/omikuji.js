@@ -1,10 +1,19 @@
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("turbolinks:load", () => {
+  const btn = document.getElementById('omikuji-btn');
 
-  const jstest = document.getElementById('jstest');
+  if(btn){
+    btn.addEventListener('click', () => {
+      const results = ["大吉", "中吉", "凶", "末吉"]
+      const n = Math.floor(Math.random() * results.length);
+      btn.textContent = results[n];
+    });
 
-  jstest.addEventListener('click', function(){
-    this.textContent = 'hi!';
-  });
+    btn.addEventListener('mousedown', () => {
+      btn.classList.add("pressed");
+    });
+    btn.addEventListener('mouseup', () => {
+      btn.classList.remove("pressed");
+    });
+  };
 
 });
-
