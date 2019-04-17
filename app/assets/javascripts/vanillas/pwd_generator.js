@@ -6,6 +6,7 @@ document.addEventListener("turbolinks:load", () => {
   const numbers = document.getElementById('pwdNumbers');
   const symbols = document.getElementById('pwdSymbols');
 
+
   function getPassword() {
     let seed_letters = 'abcdefghijklmnopqrstuvwxyz';
     let seed_numbers = '0123456789';
@@ -14,18 +15,18 @@ document.addEventListener("turbolinks:load", () => {
     let pwd = '';
 
     seed = seed_letters + seed_letters.toUpperCase();
-
-    if(numbers.checked === true){
-      seed += seed_numbers;
-    }
-    if(symbols.checked){
-      seed += seed_symbols;
-    }
-    for(let i = 0; i < len; i++){
-      pwd += seed[Math.floor(Math.random() * seed.length)]
-    }
+      if(numbers.checked === true){
+        seed += seed_numbers;
+      }
+      if(symbols.checked){
+        seed += seed_symbols;
+      }
+      for(let i = 0; i < len; i++){
+        pwd += seed[Math.floor(Math.random() * seed.length)]
+      }
     result.value = pwd;
   }
+
 
   if(slider){
     slider.addEventListener('change', ()=> {
@@ -42,5 +43,4 @@ document.addEventListener("turbolinks:load", () => {
       result.select();
     });
   }
-
 });
