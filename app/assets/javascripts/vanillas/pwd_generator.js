@@ -38,9 +38,9 @@ document.addEventListener("turbolinks:load", () => {
       getPassword();
     });
   }
-  if(result){
-    result.addEventListener('click', ()=> {
-      result.select();
-    });
-  }
+  // if(result){
+  //   result.addEventListener('click', ()=> {
+  //     result.select();
+  //   });
+  // }
 });
